@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{956CA191-D651-B29C-FCF2-0E8AF4A495E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>GameProxies</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_22;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GameProxies\AccessibilityMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AdjustableIntensityLEDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AIPlayerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AlarmClockProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AlarmClockTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AmbientLightTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AmbientOcclusionProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AmbientOcclusionSourceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AmbientSoundProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AnchoredHUDObjectProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AndroidVRCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AnimatedPanelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AssetBundleSceneLoaderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AudioTransformTrackerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\AutoChangeCultureInfoProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BackUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BakeScaleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BallEjectorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BasicExampleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BatchTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BatteryWidgetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BetweenRoundScoreboardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BindingsExampleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BlurOptimizedProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BoardPositionProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombBinderLeaderboardEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombBinderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombBinderStampProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombComponentBackingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombFaceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombGeneratorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BombRotationUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BrianTestLoadingManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BuildVersionLoggerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\BulkMultiLanguageScreenCaptureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ButtonClickerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ButtonComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ButtonFocusProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ButtonManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CallbackRunnerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\Camera2DControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CapacitorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CaptureMarketingScreenshotsTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CaptureScreenshotProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CaptureVerificationScreenshotsTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CeilingLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ChairProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CharSpinnerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ChildItemEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ChildTransparencyProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControllerCalloutsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControllerTransformOffsetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsDiagramGraphicsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsDiagramProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsIconsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsPosterMockupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsPosterParentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsPosterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsPosterScreenshotCaptureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsTutorialCompleteProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsTutorialIntroProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsTutorialScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsTutorialTextBaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ControlsTutorialTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CoroutineManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CreditsMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CreditsTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CrosshairOccluderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CrosshairProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CubeControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CurrentProfileHUDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\CustomLocalizeCallbackProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DataEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DaydreamCalloutsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DaydreamThreeDOFControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DaydreamTutorialControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DeathBarParentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DeathBarProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DefuseBotProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DelayBetweenSongsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DelayedFadeInProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DemoMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DemoPlaybackControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DemoRecorderManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DemoRecorderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DetectBasketProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DetectLeaksProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DifficultyIndicatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DisableTrackingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DontDestroyOnLoadProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DossierControlsMockupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DossierGameVersionProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DossierTitleMenuScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DotMatrixDisplayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DynamicGroupVariationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DynamicSoundGroupCreatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\DynamicSoundGroupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ElevatorCeilingLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ElevatorRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ElevatorSwitchProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EmergencyLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EntitlementCheckProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsBeginDragHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsCancelHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsDeselectHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsDragHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsDropHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsEndDragHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsInitializePotentialDragHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsMoveHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsPointerDownHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsPointerEnterHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsPointerExitHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsPointerUpHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsScrollHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsSelectHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsSubmitHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsUGUIHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EventSoundsUpdateSelectedHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ExcludeFromRenderQueueOffsetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ExcludeFromStaticBatchProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ExcludeFromTexturePackProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\EyeCameraProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FacilityRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FadeOnOffProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FilterReadDelegateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FirstBombTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FixedCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FlashAndFadeVertAlphaProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FlashProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FlashUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FloatingHoldableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FlyTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FollowCameraProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FollowCameraTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FontSizeMatcherProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FootstepSoundsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ForceCenteredUVsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FourWayDirectionHUDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FpsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FreeplayDeviceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FreeplayScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FreeplayVetosMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\FreqMarkerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameBoardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GamepadControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GamePieceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameplayLoadingManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameplayMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameplayMusicControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameplayRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GameplayStateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GasVentComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GazeControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GazeTrackerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GearVRControllerTouchpadProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GearVRThreeDOFControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GenericSceneLoaderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GlobalPrefabsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GoalMoverProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GraphicsMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GrayscaleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrAllEventsTriggerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrArmModelOffsetsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrArmModelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrAudioListenerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrAudioRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrAudioSoundfieldProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrAudioSourceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrControllerInputProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrControllerTooltipsSimpleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrControllerVisualManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrControllerVisualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GVRControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrDropdownProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrEditorEmulatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrFollowControllerPoseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrFPSProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrKeyboardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrLaserPointerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrLaserVisualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrPointerGraphicRaycasterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrPointerInputModuleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrPointerManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrPointerPhysicsRaycasterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrRecenterOnlyControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrReticlePointerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrScrollSettingsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrTooltipProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrTrackedControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\GvrVideoPlayerTextureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HelpHUDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HelpOverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HideOnLightsChangeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HighlightableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HoldableSpawnPointProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\HoldableTargetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\IAPManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ICChipProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ICPathComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ImageEffectBaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InControlInputModuleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InControlManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\IncorrectLanguageCodeScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\IndicatorWidgetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InGameManualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InlineGraphicManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InlineGraphicProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InputBufferTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InputCubeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InstanceDestroyerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractionHintProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveManualControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveManualGridViewProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveManualLargePageViewProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveManualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveManualTestBootstrapProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InteractiveObjectProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InvertNormalsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InvisibleButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InvisibleMazeCellProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InvisibleWallsComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\InvisibleWallsLayoutProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KeypadButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KeypadComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KnobRhythmSubComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTHorizontalLayoutGroupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTI2LocGlobalParametersProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTInputManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTMorpheusCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTMouseCursorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTOculusTouchDeviceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTOVRCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTSteamRenderModelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTSteamVRCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTSteamVRControllerListProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTSteamVRControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTTouchControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\KTTrackedControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LanguageConfirmScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LanguageScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LanguageSelectButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LanguageSourceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LaserPointerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LayerChangerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LeaderboardPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LeaderboardSelectableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LeanTweenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LearnMoreScreenNonVRProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LearnMoreScreenVRProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LEDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LightBulbProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LightmapPreviewProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LightmapRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LightmapTestManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ListenerFollowerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LoadingManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LoadingOverlayImageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LoadingOverlayLabelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LoadingOverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizationManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizationParamsManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizationPluralsTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizedCharacterSpacingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizeDropdownProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizedStampProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizedTextAlignmentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizedWordWrapProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizeExceptionProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalizeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LocalPlayerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LockSpinnerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LookAtOriginProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\LookAtPlayerCenterEyeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MainMenuProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ManageModEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ManageModsScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ManualHoldableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ManualPageThumbnailProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MasterAudioGroupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MasterAudioProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MatchControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MatchmakingManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MaterialOverrideProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB2_TestShowHideProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB2_TestUpdateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB2_UpdateSkinnedMeshBoundsFromBonesProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB2_UpdateSkinnedMeshBoundsFromBoundsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_AtlasPackerRenderTextureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_BatchPrefabBakerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_BoneWeightCopierProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_DisableHiddenAnimationsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_MeshBakerGrouperProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_MeshBakerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_MultiMeshBakerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_TestAddingRemovingSkinnedMeshesProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_TestBakeAllWithSameMaterialProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_TestRenderTextureTestHarnessProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MB3_TextureBakerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MemoryComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MemoryProfilingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateInFadeChildrenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateInLocalPositionDefaultEaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateInLocalRotationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateInLocalScaleDefaultEaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateOutFadeChildrenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateOutLocalPositionDefaultEaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuAnimateOutLocalScaleDefaultEaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuEntryCurrentProfileProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuEntryPlusMinusProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuManagerControlsTutorialDossierProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MenuScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MidRoundScoreboardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MirroredDisplayOverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MirrorOverlayBombTimerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MirrorOverlayScoreboardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionDetailPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionIdentifierTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionTableOfContentsHeaderEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionTableOfContentsMissionEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionTableOfContentsPageManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionTableOfContentsPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MissionTableOfContentsToCEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModAudioProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModBombComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModBombInfoProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModBombProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModCeilingLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModDefaultPrefabsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModDetailScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModGameCommandsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModGameInfoProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModGamepadProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModGameplayRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModHighlightableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModHoldableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModLoadingScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerErrorScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerHoldableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerLoadingScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerMainMenuScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerManualInstructionScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModManagerStateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModNeedyComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModSelectableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModServiceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModSettingsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModSetupRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModSourceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModuleTouchUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModWarningScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ModWidgetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MorseAndPasswordTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MorseCodeComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MotionControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MotionControlsTutorialScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MotionControlsTutorialTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MouseControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MouseGlanceArrowProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MouseGlanceBarProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MultiImageButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MusicComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MusicControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\MusicManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyActivationUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyDischargeComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyKnobComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyKnobLEDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyKnobTouchUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyTimerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyVentComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NeedyWarningTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NifmWorkerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NonVRHUDProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\NoteProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ObjectPoolProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OptionsMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OrientationSensorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OscilloscopeComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OscilloscopeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OverlapSphereZoneProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRAudioSourceTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRAutoDestroyInMRCProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRCameraFrameCompositionManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRCameraRigProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRChromaticAberrationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRControllerHelperProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRCubemapCaptureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRCustomSkeletonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRDebugHeadControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRDebugInfoProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRGazePointerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRGearVrControllerTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRGrabbableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRGrabberProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRGridCubeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRHandProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRHandTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRHeadsetEmulatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRInputModuleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRMeshProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRMeshRendererProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRMixedRealityCaptureTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRModeParmsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRMonoscopicProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVROverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRPhysicsRaycasterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRPlatformMenuProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRPlayerControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRProgressIndicatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRRaycasterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRResetOrientationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRResourcesProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRSceneLoaderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRSceneSampleControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRScreenFadeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRSkeletonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRSkeletonRendererProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRSystemPerfMetricsTcpServerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRVignetteProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\OVRWaitCursorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\P2PNetworkBallProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\P2PNetworkGoalProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PaceMakerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PasswordComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PasswordLayoutProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PausedTransparencyProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlatformManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlatformToggleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlayerAreaProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlayerControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlayerManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlayerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PlaylistControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PointingKnobProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PortProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PortWidgetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PostEffectsBaseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PostGameDefusedOverlayAnimationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PostGameRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PostGameStateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PrefabOverrideProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PrefabsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PreloaderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PressableButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProblemReporterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProfilerDataRecorderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProfilerTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProjectorControlsOverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProjectorRemoteProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProjectorScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ProjectorSlideProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PulseChildOpacityProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\PulsingEmissiveProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\QuickScreenshotToolProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RedactedStripProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RegisterGlobalParametersProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ReleaseDateCountdownProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RemotePlayerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RenderQueueOffesetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResourceManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResultDefusedPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResultExplodedPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResultFreeplayDefusedPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResultFreeplayExplodedPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ResultTournamentPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RhythmHeavenComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RhythmSubComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RichPresenceSampleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RotaterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RotateSlowlyProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RotateSmoothTestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RTLInputTextFlipperProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RTLTransformXProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\RuntimeOnlyLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SaveFileTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScanlineProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SceneManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScoreTableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScreenFaderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScreenFaderUtilProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScreenshotSaverProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScreenshotSaverWorkerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScreenSpaceScoreTableRowProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ScrollingIndicatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SecondScreenControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SecondScreenInteractiveManualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SecondScreenManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SelectableAreaProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SelectableManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SelectableProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SerialNumberProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ServiceWorkerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetLanguageDropdownProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetLanguageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetupMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetupRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetupSpawnPointsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SetupStateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SevenSegDisplayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ShadowInfoProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ShadowProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ShadowSourceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SimonButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SimonComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SimonToneTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SizedAndAnchoredHUDObjectProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SkySphereTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SlideProjectorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SnippableWireProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SoakTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SolveMissionsAllLangsTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SolveMissionsTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SortingLayerExposedProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SoundGroupOrganizerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SoundGroupVariationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SoundGroupVariationUpdaterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SoundMenuPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SpringedSwitchProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StageIndicatorBarProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StaticLogoScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StatusLightParentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StatusLightProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_CameraFlipProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_CameraMaskProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_CameraProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_ControllerManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_EarsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_ExternalCameraProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_FadeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_FrustumProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_GameViewProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_GazeTrackerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_IKProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_LaserPointerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_LoadLevelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_MenuProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_OverlayProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_PlayAreaProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_RenderModelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_RenderProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_SkyboxProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_SphericalProjectionProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_StatsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TeleporterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TestControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TestThrowProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TestTrackedCameraProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TrackedControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_TrackedObjectProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamVR_UpdatePosesProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopBrowserScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopBrowserTagButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopCategorySelectScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopChildItemsPopupProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopItemDetailsWorkerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopItemFavoriteRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopItemSubscribeRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopItemUnsubscribeRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopItemVoteRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopQueryAllFavoritesRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopQueryAllUGCRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopQueryUGCDetailsRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopQueryUserUGCRequestProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SteamWorkshopRequestManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StretchWidthProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\StrikeIndicatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SubComponentMachineProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SwappedButtonMaterialProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SwappedButtonTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SwappedButtonToggleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SwappedButtonTransformProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\SwitchRhythmSubComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestFpsObjectsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestInputManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestKeypadProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestLoggerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestManagerGUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestMenuScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestMusicControllerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestRecenterPoseProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestRTLFixerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestSceneBootstrapProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TestToyCubeProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextContainerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextMeshProProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextMeshProScalerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextMeshProUGUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextScrollerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TextSizeTestPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TexturePackerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ThreeDOFControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ThreeDOFCrosshairProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TicTacToeComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TimerComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TitleSafeVisualizerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TitleScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_DropdownProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_InputFieldProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_ScrollbarEventHandlerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_SelectionCaretProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_SpriteAnimatorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_SubMeshProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_SubMeshUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TMP_TextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ToggleSwitchProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\ToneGeneratorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchButtonControlProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchControlsTutorialScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchControlsTutorialTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchInputCaptureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchManagerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchpadControlsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchpadTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchStickControlProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchSwipeControlProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TouchTrackControlProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TournamentDetailPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TournamentTesterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TournamentWhiteboardProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TrackedControllerHighlightsProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TrackedControllerTipProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TransformFollowerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TutorialButtonComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TutorialDetailPageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TutorialWireSetComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\TypewrittenTextProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UIFollowWorldSpaceProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UniWebViewAndroidStaticListenerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UniWebViewNativeListenerProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UniWebViewProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UnlockRoomProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UnlockStateProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\UnlockStateTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VennSnippableWireProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VennWireComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VerificationDigitBackingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VerificationScreenProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VerificationTestFixtureProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VertexColorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VignetteAndChromaticAberrationProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VirtualDeviceExampleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VisualPingProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VoipAudioSourceHiLevelProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VREyeRaycasterProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VRToggleProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\VRTransformOverrideProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WebManualButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WebManualProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WhosOnFirstComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WidgetComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WidgetGeneratorProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WidgetProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireRhythmSubComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSequenceComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSequencePageProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSequenceWireProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSetButtonProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSetComponentProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WireSetUIProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WorkshopBrowserEntryProxy.cs" />
+     <Compile Include="Assets\Scripts\GameProxies\WorldSpaceScoreTableRowProxy.cs" />
+     <None Include="Assets\Scripts\GameProxies\GameProxies.asmdef" />
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WebModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="0Harmony">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Editor/Plugins/Managed/0Harmony.dll</HintPath>
+ </Reference>
+ <Reference Include="DotNetZip">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Editor/Plugins/Managed/DotNetZip.dll</HintPath>
+ </Reference>
+ <Reference Include="KtaneAssemblyExporter">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Editor/Plugins/Managed/KtaneAssemblyExporter.dll</HintPath>
+ </Reference>
+ <Reference Include="KtaneModkitUtils">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Editor/Plugins/Managed/KtaneModkitUtils.dll</HintPath>
+ </Reference>
+ <Reference Include="KMFramework">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/KMFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-CSharp-firstpass-forwarder">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/Assembly-CSharp-firstpass-forwarder.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-CSharp-forwarder">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/Assembly-CSharp-forwarder.dll</HintPath>
+ </Reference>
+ <Reference Include="Camera">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/Camera.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.ProtocolBuffers">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/Google.ProtocolBuffers.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/I18N.dll</HintPath>
+ </Reference>
+ <Reference Include="I18N.West">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/I18N.West.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="PdfSharp">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/PdfSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="SonyNP">
+ <HintPath>D:/Stuff/Github/Possessed's/KTANE-ethans-dream/Assets/Plugins/Managed/GameAssemblies/SonyNP.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/dhamm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

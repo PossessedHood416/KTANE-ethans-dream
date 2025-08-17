@@ -1,0 +1,8 @@
+{
+  "name": "EthansDream",
+  "references": [
+    "GameProxies"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}

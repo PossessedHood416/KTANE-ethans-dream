@@ -1,0 +1,10 @@
+{
+  "name": "EthansDream-Editor",
+  "references": [
+    "EthansDream"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
