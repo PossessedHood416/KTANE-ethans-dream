@@ -53,7 +53,7 @@ public class EthansDream : MonoBehaviour {
 	}
 
 	void OnNeedyActivation(){
-		if(isWakingUp || isAutosolving){
+		if(isWakingUp){
 			Needy.HandlePass();
 			return;
 		}
@@ -61,7 +61,6 @@ public class EthansDream : MonoBehaviour {
 	}
 
 	void OnTimerExpired(){
-		if(isAutosolving) return;
 		StartCoroutine(WakeUp());
 	}
 
@@ -75,11 +74,14 @@ public class EthansDream : MonoBehaviour {
 		float timerem = Needy.GetNeedyTimeRemaining();
 		while(true){
 			//time remaining
-			timerem += (isLightsOn ? -2f/60f : 1f/150f);
-			timerem = Mathf.Clamp(timerem, 0.01f, 30.5f);
-			Needy.SetNeedyTimeRemaining(timerem);
+			if(isAutosolving){
+				timerem = 30;
+			} else {
+				timerem += (isLightsOn ? -2f/60f : 1f/150f);
+				timerem = Mathf.Clamp(timerem, 0.01f, 30.5f);
+			}
 
-			//battery stuff
+			Needy.SetNeedyTimeRemaining(timerem);
 			UpdateBattery(6 - (int)((timerem+5f)/6));
 
 			yield return null;
@@ -151,6 +153,12 @@ public class EthansDream : MonoBehaviour {
 
 	IEnumerator ProcessTwitchCommand (string Command) {
 		yield return null;
+
+		if(isAutosolving){
+			yield return "sendtochaterror Needy is autosolving.";
+			yield break;
+		}
+
 		Command = Command.ToUpper();
 		if(Command == "ON"){
 			if(!isLightsOn) LightSwitch.OnInteract();
@@ -170,9 +178,6 @@ public class EthansDream : MonoBehaviour {
 	IEnumerator HandleAutosolver () {
 		yield return null;
 		isAutosolving = true;
-		//bodge
-		OnTimerExpired();
-		OnNeedyDeactivation();
-		Needy.HandlePass();
+		TurnLights(true);
 	}
 }
