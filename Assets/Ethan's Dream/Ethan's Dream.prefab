@@ -1831,8 +1831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CountdownTime: 30
-  ResetDelayMin: 100000000
-  ResetDelayMax: 100000000
+  ResetDelayMin: 50
+  ResetDelayMax: 90
   ModuleType: EthansDream
   ModuleDisplayName: Ethan's Dream
   RequiresTimerVisibility: 0

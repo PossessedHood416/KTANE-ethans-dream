@@ -35,6 +35,8 @@ public class EthansDream : MonoBehaviour {
 	private bool isBombDead = false;
 	private bool isAutosolving = false;
 
+	bool TwitchPlaysActive;
+
 	void Awake () { //Avoid doing calculations in here regarding edgework. Just use this for setting up buttons for simplicity.
 		ModuleId = ModuleIdCounter++;
 		LightSwitch.OnInteract += delegate () { ButtonPress(); return false; };
@@ -57,6 +59,7 @@ public class EthansDream : MonoBehaviour {
 			Needy.HandlePass();
 			return;
 		}
+		if(TwitchPlaysActive) Needy.SetNeedyTimeRemaining(60f);
 		CheckLightsCoroutine = StartCoroutine(CheckLights());
 	}
 
@@ -78,11 +81,13 @@ public class EthansDream : MonoBehaviour {
 				timerem = 30;
 			} else {
 				timerem += (isLightsOn ? -2f/60f : 1f/150f);
-				timerem = Mathf.Clamp(timerem, 0.01f, 30.5f);
+				timerem = Mathf.Clamp(timerem, 0.01f, TwitchPlaysActive ? 60.5f : 30.5f);
 			}
 
 			Needy.SetNeedyTimeRemaining(timerem);
-			UpdateBattery(6 - (int)((timerem+5f)/6));
+
+			if(!TwitchPlaysActive) UpdateBattery(6 - (int)((timerem+5f)/6));
+			else UpdateBattery(6 - (int)((timerem+10f)/12));
 
 			yield return null;
 		}
@@ -123,6 +128,10 @@ public class EthansDream : MonoBehaviour {
 		while(!isBombDead){
 			Needy.HandleStrike();
 			LightSwitch.AddInteractionPunch(4f);
+			if(TwitchPlaysActive){
+				isWakingUp = false;
+				yield break;
+			}
 			yield return new WaitForSeconds(0.5f);
 		}
 	}
