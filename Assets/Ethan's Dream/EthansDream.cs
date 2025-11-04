@@ -157,7 +157,7 @@ public class EthansDream : MonoBehaviour {
 	}
 
 #pragma warning disable 414
-	private readonly string TwitchHelpMessage = @"Use !{0} on/off to toggle lights. (UNSUPPORTED)";
+	private readonly string TwitchHelpMessage = @"Use !{0} on/off to toggle lights.";
 #pragma warning restore 414
 
 	IEnumerator ProcessTwitchCommand (string Command) {
