@@ -61,6 +61,8 @@ public class EthansDream : MonoBehaviour {
 		}
 		if(TwitchPlaysActive) Needy.SetNeedyTimeRemaining(60f);
 		CheckLightsCoroutine = StartCoroutine(CheckLights());
+
+		if(isLightsOn) ButtonPress();
 	}
 
 	void OnTimerExpired(){
