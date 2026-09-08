@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly name="wawa.Schemas">
+  <member name="T:wawa.Schemas.Fluent.CanCreateSeparateListingOrBuild">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanCreateSeparateListingOrBuild.BuildAndClear">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanCreateSeparateListingOrBuild.CreateSeparateListing(System.String,System.String)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="fileName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanRegister.GetHashCode">
+    <attribute ctor="M:JetBrains.Annotations.ValueRangeAttribute.#ctor(System.Int64)">
+      <argument>0</argument>
+    </attribute>
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanRegister.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanRegister.Register``1">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanRegister.ToString">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="T:wawa.Schemas.Fluent.CanSection">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.Fluent.CanSection.Section(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="T:wawa.Schemas.TweaksEditorSettings">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksEditorSettings.Builder.BuildAndClear">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksEditorSettings.Builder.CreateSeparateListing(System.String,System.String)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksEditorSettings.Builder.Register``1">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksEditorSettings.Builder.Section(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksEditorSettings.CreateListing(System.String,System.String)">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="modId">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.ArrayAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.CheckboxAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.DropdownAttribute.#ctor(System.String,System.String,System.Object[])">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="dropdownItems">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:wawa.Schemas.TweaksSetting.DropdownAttribute.DropdownItems">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.From(System.Reflection.MemberInfo)">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.NumberAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.StringAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSetting.SubmenuAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:wawa.Schemas.TweaksSettingAttribute.#ctor(System.String,System.String)">
+    <parameter name="description">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="text">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:wawa.Schemas.TweaksSettingAttribute.Description">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:wawa.Schemas.TweaksSettingAttribute.Text">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+</assembly>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly name="wawa.Recall">
+  <member name="M:wawa.Recall.Entity.FromComponent(UnityEngine.Component)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.Entity.GetChildren(UnityEngine.GameObject)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.GetChildren(UnityEngine.GameObject)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToEntities(KMBomb)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToEntities(System.Collections.Generic.IEnumerable{KMBombModule})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToEntities(System.Collections.Generic.IEnumerable{KMNeedyModule})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToHighlightable(wawa.Recall.Entity)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToHighlighters(System.Collections.Generic.IEnumerable{wawa.Recall.Entity})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToManyEntities(System.Collections.Generic.IEnumerable{KMBomb})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToSelectable(wawa.Recall.Entity)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.EntityCore.ToSelectors(System.Collections.Generic.IEnumerable{wawa.Recall.Entity})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.Highlighted.FromComponent(UnityEngine.Component)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="P:wawa.Recall.Selected.ChildLength">
+    <attribute ctor="M:JetBrains.Annotations.NonNegativeValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.SelectedCore.ToEntities(System.Collections.Generic.IEnumerable{wawa.Recall.Selected})">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+  <member name="M:wawa.Recall.SelectedCore.ToEntity(wawa.Recall.Selected)">
+    <attribute ctor="M:JetBrains.Annotations.MustUseReturnValueAttribute.#ctor" />
+  </member>
+</assembly>

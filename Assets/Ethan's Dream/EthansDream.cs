@@ -7,7 +7,14 @@ using UnityEngine;
 using KModkit;
 using Rnd = UnityEngine.Random;
 using Events;
-//using Math = ExMath;
+
+/*
+	To use mission description based settings, format the description as follows:
+	[Ethan's Dream] <Recharge Rate> <Dissipation Rate>
+	Decimal and negative values are supported. Test with the regex below to be sure.
+	Recharge means when lights are on, Dissipation means when lights are off. The default values are 2.0 and 0.5 respectively.
+	\^[Ethan's Dream\] (-?\d+\.?\d*) (-?\d+\.?\d*)$
+ */
 
 public class EthansDream : MonoBehaviour {
 
@@ -35,10 +42,38 @@ public class EthansDream : MonoBehaviour {
 	private bool isBombDead = false;
 	private bool isAutosolving = false;
 
+	private EthansDreamSettings Settings = new EthansDreamSettings();
+	private float RechargeRate = 2f; //ie towards death, at the rate of 2.0 units per "sec" out of 60
+	private float DissipationRate = 0.5f; //ie to life , at the rate of 0.5 units per "sec" out of 60
+	//units are as per "timer"
+
 	bool TwitchPlaysActive;
 
 	void Awake () { //Avoid doing calculations in here regarding edgework. Just use this for setting up buttons for simplicity.
-		ModuleId = ModuleIdCounter++;
+		//Setup settings
+		ModConfig<EthansDreamSettings> modConfig = new ModConfig<EthansDreamSettings>("EthansDreamSettings");
+		Settings = modConfig.Settings;
+		modConfig.Settings = Settings;
+		RechargeRate = Settings.RechargeRate;
+		DissipationRate = Settings.DissipationRate;
+
+		//Load data from mission
+		string missionDescription = (string)wawa.DDL.Missions.Description;
+
+        Regex regex = new Regex(@"\[Ethan's Dream\] (-?\d+\.?\d*) (-?\d+\.?\d*)");
+		if (missionDescription != null && regex.IsMatch(missionDescription)) {
+            Match match = regex.Match(missionDescription);
+ 
+            RechargeRate = float.Parse(match.Groups[1].Value);
+            DissipationRate = float.Parse(match.Groups[2].Value);
+            Debug.LogFormat("[Ethan's Dream #{0}] Settings have been overwritten by mission description.", ModuleId);
+        }
+
+        Debug.LogFormat("[Ethan's Dream #{0}] Twitch plays active: {1}.", ModuleId, TwitchPlaysActive);
+        Debug.LogFormat("[Ethan's Dream #{0}] Recharge Rate: {1}, Dissipation Rate: {2}", ModuleId, RechargeRate, DissipationRate);
+
+
+        ModuleId = ModuleIdCounter++;
 		LightSwitch.OnInteract += delegate () { ButtonPress(); return false; };
 
 		Needy.OnNeedyActivation += OnNeedyActivation;
@@ -59,9 +94,8 @@ public class EthansDream : MonoBehaviour {
 			Needy.HandlePass();
 			return;
 		}
-		if(TwitchPlaysActive) Needy.SetNeedyTimeRemaining(60f);
-		CheckLightsCoroutine = StartCoroutine(CheckLights());
 
+		CheckLightsCoroutine = StartCoroutine(CheckLights());
 		if(isLightsOn) ButtonPress();
 	}
 
@@ -80,18 +114,15 @@ public class EthansDream : MonoBehaviour {
 		while(true){
 			//time remaining
 			if(isAutosolving){
-				timerem = 30;
+				timerem = 60;
 			} else {
-				timerem += (isLightsOn ? -2f/60f : 1f/150f);
-				timerem = Mathf.Clamp(timerem, 0.01f, TwitchPlaysActive ? 60.5f : 30.5f);
+				timerem += (isLightsOn ? -RechargeRate/15f : DissipationRate/15f);
+				timerem = Mathf.Clamp(timerem, 0.01f, 60.5f);
 			}
 
 			Needy.SetNeedyTimeRemaining(timerem);
-
-			if(!TwitchPlaysActive) UpdateBattery(6 - (int)((timerem+5f)/6));
-			else UpdateBattery(6 - (int)((timerem+10f)/12));
-
-			yield return null;
+			UpdateBattery(6 - (int)((timerem+10f)/12));
+			yield return new WaitForSeconds(1/15f);
 		}
 	}
 
@@ -191,4 +222,27 @@ public class EthansDream : MonoBehaviour {
 		isAutosolving = true;
 		TurnLights(true);
 	}
+
+	//mod settings
+	class EthansDreamSettings {
+		public float RechargeRate = 2f;
+		public float DissipationRate = 0.5f;
+	}
+
+	static Dictionary<string, object>[] TweaksEditorSettings = new Dictionary<string, object>[] {
+		new Dictionary<string, object> {
+			 { "Filename", "EthansDream.json" },
+			 { "Name", "EthansDream Settings" },
+			 { "Listing", new List<Dictionary<string, object>>{
+					new Dictionary<string, object> {
+						 { "Key", "Recharge Rate" },
+						 { "Text", "The rate at which the battery recharges in units per \"second\". Default is 2.0." }
+					},
+					new Dictionary<string, object> {
+						 { "Key", "Dissipation Rate" },
+						 { "Text", "The rate at which the battery dissipates in units per \"second\". Default is 0.5." }
+					}
+			 } }
+		}
+	};
 }
